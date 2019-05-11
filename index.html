@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+<header>
+  <meta charset="utf-8">
+
+  <title>Vue Example</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+
+</header>
+
+<body>
+    <div id="app">
+    <h1 class="title has-text-centered"> Vue.js </h1>
+    <div class="box column is-half is-offset-one-quarter">
+        <h1 class="subtitle has-text-centered"> {{msg}} </h1>
+    </div>
+    
+    <div class="column is-half is-offset-one-quarter">
+      <div class="columns">
+          <input class="input " @keyup.enter="addNewMsg" v-model="newMsg">
+         
+              <button class="button is-success">Submit</button>
+          
+          
+      </div>
+     
+    </div>
+    
+    </div>
+    <script src="js/vue.js"></script>
+    <script src="js/vuex.js"></script>
+
+    
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>
